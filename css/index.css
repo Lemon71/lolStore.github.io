@@ -1,5 +1,9 @@
 /*页面样式*/
+.lol_container {
+  width: 100%;
+}
 .lol_container .lol_header {
+  width: 100%;
   height: 50px;
   border-bottom: 1px solid #b8b8b8;
   position: relative;
@@ -61,7 +65,7 @@
 }
 .lol_container .lol_header .lol_card {
   position: absolute;
-  left: 330px;
+  right: 42px;
   top: 14px;
 }
 .lol_container .lol_header .lol_card span {
@@ -70,7 +74,7 @@
 }
 .lol_container .lol_header .lol_cart {
   position: absolute;
-  left: 370px;
+  right: 10px;
   top: 10px;
 }
 .lol_container .lol_header .lol_cart span {
