@@ -1,1 +1,10 @@
 /*通用样式*/
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+}
+a{
+    text-decoration: none;
+    /*color: #000;*/
+}

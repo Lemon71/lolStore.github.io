@@ -2,10 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>掌上英雄联盟商城</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!--可以直接引入网络的链接-->
+    <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <!--也可以用本地下载的文件-->
+    <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<!--最外层的容器盒子-->
+<div class="lol_container">
+    <!--顶部搜索栏-->
+    <div class="lol_header">
+        <a href="javascript:;" class="lol_userIcon">
+            <img src="./images/usericon.jpg" alt="用户头像">
+        </a>
+        <span class="fa fa-search searchIcon"></span>
+        <input type="search" placeholder="找你喜欢的商品" class="lol_search" style="line-height: normal">
+        <a href="javascript:;" class="lol_card" >
+            <span class="fa fa-credit-card-alt "></span>
+        </a>
+        <a href="javascript:;" class="lol_cart">
+            <span class="fa fa-shopping-cart "></span>
+        </a>
+    </div>
+</div>
 </body>
 </html>
