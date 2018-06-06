@@ -6,7 +6,11 @@
   width: 100%;
   height: 50px;
   border-bottom: 1px solid #b8b8b8;
-  position: relative;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  background-color: #fffafa;
   /* 设置pading 把input 挤进去 */
   padding-left: 50px;
   padding-right: 80px;
@@ -81,4 +85,8 @@
 .lol_container .lol_header .lol_cart span {
   font-size: 30px;
   color: #d0ab00;
+}
+.lol_container .lol_banner {
+  width: 100%;
+  margin-top: 50px;
 }

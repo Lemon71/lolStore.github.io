@@ -1,13 +1,17 @@
 /*页面样式*/
 @gold : #d0ab00;
-
+@bgc:#fffafa;
 .lol_container{
   width: 100%;
   .lol_header{
     width: 100%;
     height: 50px;
     border-bottom: 1px solid #b8b8b8;
-    position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: @bgc;
     /* 设置pading 把input 挤进去 */
     padding-left: 50px;
     padding-right: 80px;
@@ -89,5 +93,9 @@
         color: @gold;
       }
     }
+  }
+  .lol_banner{
+    width: 100%;
+    margin-top: 50px;
   }
 }
