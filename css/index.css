@@ -7,17 +7,19 @@
   height: 50px;
   border-bottom: 1px solid #b8b8b8;
   position: relative;
+  /* 设置pading 把input 挤进去 */
+  padding-left: 50px;
+  padding-right: 80px;
 }
 .lol_container .lol_header .lol_userIcon {
-  float: left;
+  position: absolute;
   width: 35px;
   height: 35px;
   border: 1px solid #d0ab00;
   border-radius: 50%;
   overflow: hidden;
-  margin-left: 7px;
-  margin-right: 10px;
-  margin-top: 5px;
+  top: 7px;
+  left: 5px;
 }
 .lol_container .lol_header .lol_userIcon img {
   width: 35px;
@@ -30,9 +32,8 @@
   color: #9a9a9a;
 }
 .lol_container .lol_header .lol_search {
+  width: 100%;
   margin-top: 7px;
-  float: left;
-  width: 63%;
   height: 70%;
   border: 1px solid #cacaca;
   background-color: #cacaca;
@@ -40,27 +41,23 @@
   padding-left: 24px;
 }
 .lol_container .lol_header input::-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #989898;
-  line-height: 32px;
   padding-left: 50px;
 }
 .lol_container .lol_header input::-moz-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #989898;
-  line-height: 32px;
   padding-left: 50px;
 }
 .lol_container .lol_header input::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #989898;
-  line-height: 32px;
   padding-left: 50px;
 }
 .lol_container .lol_header input:-moz-placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #989898;
-  line-height: 32px;
   padding-left: 50px;
 }
 .lol_container .lol_header .lol_card {
