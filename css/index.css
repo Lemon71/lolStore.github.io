@@ -1,6 +1,7 @@
 /*页面样式*/
 .lol_container {
   width: 100%;
+  overflow: hidden;
 }
 .lol_container .lol_header {
   width: 100%;
@@ -121,12 +122,61 @@
 .lol_container .lol_banner .banner_index .current {
   background-color: #fff;
 }
-.lol_container .new {
+.lol_container .nav {
+  width: 100%;
+  height: 90px;
+  border-bottom: 2px solid #d1d1d1;
+}
+.lol_container .nav ul {
+  width: 100%;
+  height: 100%;
+}
+.lol_container .nav ul li {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.lol_container .nav ul li a {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.lol_container .nav ul li a .nav_icon {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border: 1px solid #d0ab00;
+  background-color: #d0ab00;
+  border-radius: 50%;
+  margin-left: -25%;
+}
+.lol_container .nav ul li a .nav_icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
   margin-top: -10px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.lol_container .nav ul li a .nav_text {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: #767676;
+}
+.lol_container .new {
+  border-bottom: 2px solid #d1d1d1;
+  padding-bottom: 10px;
 }
 .lol_container .new .new_title {
   height: 40px;
   position: relative;
+  margin-bottom: 3px;
 }
 .lol_container .new .new_title .new_title_up {
   position: absolute;
@@ -235,4 +285,150 @@
   color: #FFFFFF;
   font-size: 20px;
   text-overflow: ellipsis;
+}
+.lol_container .worth {
+  border-bottom: 2px solid #d1d1d1;
+  padding-bottom: 10px;
+}
+.lol_container .worth .worth_title {
+  height: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.lol_container .worth .worth_title .worth_title_up {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #d0ab00;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+}
+.lol_container .worth .worth_title .worth_title_right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: #d0ab00;
+}
+.lol_container .worth .worth_item {
+  height: 150px;
+  width: 100%;
+}
+.lol_container .worth .worth_item ul {
+  width: 100%;
+  height: 100%;
+}
+.lol_container .worth .worth_item ul li {
+  padding: 0 10px 0 10px;
+  float: left;
+  width: 50%;
+  height: 120px;
+  overflow: hidden;
+}
+.lol_container .worth .worth_item ul li a {
+  display: block;
+  color: #d0ab00;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.lol_container .worth .worth_item ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.lol_container .worth .worth_item ul li a .worth_text1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.lol_container .worth .worth_item ul li a .worth_text1 span {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -15px;
+}
+.lol_container .worth .worth_item ul li a .worth_text2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(31, 48, 83, 0.6);
+}
+.lol_container .worth .worth_item ul li a .worth_text2 span {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -15px;
+}
+.lol_container .suggestion {
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+}
+.lol_container .suggestion .suggestion_title {
+  height: 30px;
+  font-size: 20px;
+}
+.lol_container .suggestion .suggestion_item ul {
+  width: 100%;
+}
+.lol_container .suggestion .suggestion_item ul li {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 85px;
+  position: relative;
+}
+.lol_container .suggestion .suggestion_item ul li a {
+  display: block;
+  width: 100%;
+}
+.lol_container .suggestion .suggestion_item ul li a .cvs {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.lol_container .suggestion .suggestion_item ul li a .suggestion_text {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #d0ab00;
+  width: 50%;
+  height: 100%;
+}
+.lol_container .suggestion .suggestion_item ul li a .suggestion_text span:nth-child(1) {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+.lol_container .suggestion .suggestion_item ul li a .suggestion_text span:nth-child(2) {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+.lol_container .suggestion .suggestion_item ul li a .suggestion_text span:nth-child(3) {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #66e9ff;
+}
+.lol_container .suggestion .suggestion_item ul li a img {
+  width: 100%;
 }
