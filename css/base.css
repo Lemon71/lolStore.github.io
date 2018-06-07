@@ -16,4 +16,26 @@ a{
     /*盒子模型，很关键，是免死金牌*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content:'';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
 }
