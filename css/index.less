@@ -1,8 +1,11 @@
 /*页面样式*/
 @gold : #d0ab00;
 @bgc:#fffafa;
+@border:#d1d1d1;
 .lol_container{
   width: 100%;
+  overflow: hidden;
+  //顶部搜索栏
   .lol_header{
     width: 100%;
     height: 50px;
@@ -94,6 +97,7 @@
       }
     }
   }
+  //轮播图
   .lol_banner{
     width: 100%;
     margin-top: 50px;
@@ -134,11 +138,62 @@
       }
     }
   }
+  //导航栏
+  .nav{
+    width: 100%;
+    height: 90px;
+    border-bottom: 2px solid @border;
+    ul{
+      width: 100%;
+      height: 100%;
+      li{
+        width: 25%;
+        height: 100%;
+        float: left;
+        a{
+          position: relative;
+          display: block;
+          height: 100%;
+          width: 100%;
+          .nav_icon{
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            border: 1px solid @gold;
+            background-color: @gold;
+            border-radius: 50%;
+            margin-left: -25%;
+            span{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              font-size: 20px;
+              color: #FFFFFF;
+            }
+          }
+          .nav_text{
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            color: #767676;
+          }
+        }
+      }
+    }
+  }
+  //最新上架
   .new{
-    margin-top: -10px;
+    border-bottom: 2px solid @border;
+    padding-bottom: 10px;
     .new_title{
       height: 40px;
       position: relative;
+      margin-bottom: 3px;
       .new_title_up{
         position: absolute;
         top: 0px;
@@ -248,5 +303,160 @@
         }
       }
     }
+  }
+  //什么值得买
+  .worth{
+    border-bottom: 2px solid @border;
+    padding-bottom: 10px;
+    .worth_title{
+      height: 40px;
+      position: relative;
+      margin-bottom: 30px;
+      .worth_title_up{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        color: @gold;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      .worth_title_right{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 20px;
+        color: @gold;
+      }
+    }
+    .worth_item{
+      height: 150px;
+      width: 100%;
+      ul{
+        width: 100%;
+        height: 100%;
+        li{
+          padding: 0 10px 0 10px;
+          float: left;
+          width: 50%;
+          height: 120px;
+          overflow: hidden;
+          a{
+            display: block;
+            color: @gold;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+            .worth_text1{
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: rgba(0,0,0,0.6);
+              //z-index: 1;
+                span{
+                  position: absolute;
+                  top: 50%;
+                  left: 0px;
+                  height: 100%;
+                  width: 100%;
+                  overflow: hidden;
+                  text-align: center;
+                  font-size: 20px;
+                  margin-top:-15px;
+                }
+            }
+            .worth_text2{
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: rgba(31, 48, 83, 0.6);
+                span{
+                  position: absolute;
+                  top: 50%;
+                  left: 0px;
+                  height: 100%;
+                  width: 100%;
+                  overflow: hidden;
+                  text-align: center;
+                  font-size: 20px;
+                  margin-top:-15px;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+  //推荐英雄和推荐皮肤
+  .suggestion{
+    width: 100%;
+    padding: 10px 20px 0px 20px;
+    .suggestion_title{
+        height: 30px;
+        font-size: 20px;
+    }
+    .suggestion_item{
+      ul{
+        width: 100%;
+        li{
+          width: 100%;
+          margin-bottom: 10px;
+          overflow: hidden;
+          height: 85px;
+          position: relative;
+          a{
+            display: block;
+            width: 100%;
+            .cvs{
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              z-index: 1;
+            }
+            .suggestion_text{
+              z-index: 2;
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              color: @gold;
+              width: 50%;
+              height: 100%;
+              span:nth-child(1){
+                position: absolute;
+                bottom: 40px;
+                left: 0px;
+              }
+              span:nth-child(2){
+                position: absolute;
+                bottom: 20px;
+                left: 0px;
+              }
+              span:nth-child(3){
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                color: #66e9ff;
+              }
+            }
+            img{
+              width: 100%;
+              span:nth-child(1){
+
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 }
