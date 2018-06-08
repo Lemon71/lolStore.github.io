@@ -187,6 +187,14 @@
   font-size: 20px;
   line-height: 40px;
 }
+.lol_container .new .new_title ul {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+.lol_container .new .new_title ul li {
+  float: left;
+}
 .lol_container .new .new_title .new_title_right {
   position: absolute;
   top: 10px;
@@ -391,7 +399,7 @@
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
-  height: 85px;
+  height: 100px;
   position: relative;
 }
 .lol_container .suggestion .suggestion_item ul li a {
@@ -415,18 +423,19 @@
 }
 .lol_container .suggestion .suggestion_item ul li a .suggestion_text span:nth-child(1) {
   position: absolute;
-  bottom: 40px;
-  left: 0px;
+  bottom: 30px;
+  left: 10px;
 }
 .lol_container .suggestion .suggestion_item ul li a .suggestion_text span:nth-child(2) {
   position: absolute;
-  bottom: 20px;
-  left: 0px;
+  bottom: 60px;
+  left: 10px;
+  font-weight: bold;
 }
 .lol_container .suggestion .suggestion_item ul li a .suggestion_text span:nth-child(3) {
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  left: 10px;
   color: #66e9ff;
 }
 .lol_container .suggestion .suggestion_item ul li a img {
