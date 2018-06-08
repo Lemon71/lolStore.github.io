@@ -186,7 +186,7 @@
       }
     }
   }
-  //最新上架
+  //限时销售，原名最新上架
   .new{
     border-bottom: 2px solid @border;
     padding-bottom: 10px;
@@ -202,6 +202,14 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 40px;
+      }
+      ul{
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        li{
+          float: left;
+        }
       }
       .new_title_right{
         position: absolute;
@@ -411,7 +419,7 @@
           width: 100%;
           margin-bottom: 10px;
           overflow: hidden;
-          height: 85px;
+          height: 100px;
           position: relative;
           a{
             display: block;
@@ -432,18 +440,19 @@
               height: 100%;
               span:nth-child(1){
                 position: absolute;
-                bottom: 40px;
-                left: 0px;
+                bottom: 30px;
+                left: 10px;
               }
               span:nth-child(2){
                 position: absolute;
-                bottom: 20px;
-                left: 0px;
+                bottom: 60px;
+                left: 10px;
+                font-weight: bold;
               }
               span:nth-child(3){
                 position: absolute;
                 bottom: 0px;
-                left: 0px;
+                left: 10px;
                 color: #66e9ff;
               }
             }
