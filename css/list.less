@@ -1,0 +1,224 @@
+/*列表样式*/
+@gold : #d0ab00;
+@bgc:#fffafa;
+@border:#d1d1d1;
+//只有这个页面需要锁定住
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+.lol_header{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #b8b8b8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  background-color: @bgc;
+  /* 设置pading 把input 挤进去 */
+  padding-left: 50px;
+  padding-right: 80px;
+  ///*盒子模型，很关键，是免死金牌*/
+  //-webkit-box-sizing: border-box;
+  //box-sizing: border-box;
+  .lol_userIcon{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid @gold;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 7px;
+    left: 5px;
+    img{
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .searchIcon{
+    position: absolute;
+    left: 62px;
+    top: 15px;
+    color: #9a9a9a;
+  }
+  .lol_search{
+    width: 100%;
+    margin-top:7px;
+    height: 70%;
+    border: 1px solid #cacaca;
+    background-color: #cacaca;
+    border-radius: 8px;
+    padding-left: 24px;
+  }
+  input::-ms-input-placeholder{
+    font-size: 14px;
+    color: #989898;
+    line-height: 100%;
+    padding-left: 50px;
+
+  }
+  input::-moz-placeholder{
+    font-size: 14px;
+    color: #989898;
+    line-height: 100%;
+    padding-left: 50px;
+
+  }
+  input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #989898;
+    line-height: 100%;
+    padding-left: 50px;
+    //color: red;
+  }
+  input:-moz-placeholder{
+    font-size: 14px;
+    color: #989898;
+    line-height: 100%;
+    padding-left: 50px;
+
+  }
+  .lol_card{
+    position: absolute;
+    right: 42px;
+    top: 14px;
+    span{
+      font-size: 23px;
+      color: @gold;
+    }
+  }
+  .lol_cart{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    span{
+      font-size: 30px;
+      color: @gold;
+    }
+  }
+}
+.lol_container{
+  width: 100%;
+  height: 100%;
+  .lol_header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #b8b8b8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: @bgc;
+    /* 设置pading 把input 挤进去 */
+    padding-left: 50px;
+    padding-right: 80px;
+    ///*盒子模型，很关键，是免死金牌*/
+    //-webkit-box-sizing: border-box;
+    //box-sizing: border-box;
+    .lol_userIcon{
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @gold;
+      border-radius: 50%;
+      overflow: hidden;
+      top: 7px;
+      left: 5px;
+      img{
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .searchIcon{
+      position: absolute;
+      left: 62px;
+      top: 15px;
+      color: #9a9a9a;
+    }
+    .lol_search{
+      width: 100%;
+      margin-top:7px;
+      height: 70%;
+      border: 1px solid #cacaca;
+      background-color: #cacaca;
+      border-radius: 8px;
+      padding-left: 24px;
+    }
+    input::-ms-input-placeholder{
+      font-size: 14px;
+      color: #989898;
+      line-height: 100%;
+      padding-left: 50px;
+
+    }
+    input::-moz-placeholder{
+      font-size: 14px;
+      color: #989898;
+      line-height: 100%;
+      padding-left: 50px;
+
+    }
+    input::-webkit-input-placeholder{
+      font-size: 14px;
+      color: #989898;
+      line-height: 100%;
+      padding-left: 50px;
+      //color: red;
+    }
+    input:-moz-placeholder{
+      font-size: 14px;
+      color: #989898;
+      line-height: 100%;
+      padding-left: 50px;
+
+    }
+    .lol_card{
+      position: absolute;
+      right: 42px;
+      top: 14px;
+      span{
+        font-size: 23px;
+        color: @gold;
+      }
+    }
+    .lol_cart{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      span{
+        font-size: 30px;
+        color: @gold;
+      }
+    }
+  }
+  .lol_main{
+    padding-top: 50px;
+    height: 100%;
+    .list_left{
+      width: 100px;
+      height: 100%;
+      ul{
+        width: 100%;
+      }
+      .current{
+        background-color: #ffe8a7;
+      }
+      li{
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #cacaca;
+      }
+    }
+    .list_right{
+      overflow: hidden;
+      height: 100%;
+      .right_text{
+
+      }
+    }
+  }
+
+}
